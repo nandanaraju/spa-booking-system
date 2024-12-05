@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa Appointment Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center text-teal-600 mb-8">Spa Appointment Booking</h1>
+        
+        <!-- Booking Form -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-10">
+            <h2 class="text-2xl font-semibold text-teal-500 mb-4">Book Appointment</h2>
+            <form action="/submit-booking" method="POST" class="space-y-4">
+                <div>
+                    <label for="name" class="block font-medium">Name:</label>
+                    <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label for="phone" class="block font-medium">Phone:</label>
+                    <input type="text" id="phone" name="phone" required class="w-full p-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label for="service" class="block font-medium">Service:</label>
+                    <input type="text" id="service" name="service" required class="w-full p-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label for="time" class="block font-medium">Time:</label>
+                    <input type="text" id="time" name="time" required class="w-full p-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label for="date" class="block font-medium">Date:</label>
+                    <input type="date" id="date" name="date" required class="w-full p-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label for="notes" class="block font-medium">Notes:</label>
+                    <textarea id="notes" name="notes" class="w-full p-2 border border-gray-300 rounded-lg"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-teal-500 text-white py-2 rounded-lg hover:bg-teal-600">Book Appointment</button>
+            </form>
+        </div>
+
+        <!-- Modify Appointment Form -->
+        <div class="bg-white shadow-md rounded-lg p-6 mb-10">
+            <h2 class="text-2xl font-semibold text-teal-500 mb-4">Modify Appointment</h2>
+            <form action="/modify-appointment" method="POST" class="space-y-4">
+                <div>
+                    <label for="phone" class="block font-medium">Phone:</label>
+                    <input type="text" id="phone" name="phone" required class="w-full p-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label for="service" class="block font-medium">New Service:</label>
+                    <input type="text" id="service" name="service" class="w-full p-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label for="time" class="block font-medium">New Time:</label>
+                    <input type="text" id="time" name="time" class="w-full p-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label for="date" class="block font-medium">New Date:</label>
+                    <input type="date" id="date" name="date" class="w-full p-2 border border-gray-300 rounded-lg">
+                </div>
+                <div>
+                    <label for="notes" class="block font-medium">New Notes:</label>
+                    <textarea id="notes" name="notes" class="w-full p-2 border border-gray-300 rounded-lg"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-teal-500 text-white py-2 rounded-lg hover:bg-teal-600">Modify Appointment</button>
+            </form>
+        </div>
+
+        <!-- Cancel Appointment Form -->
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-semibold text-teal-500 mb-4">Cancel Appointment</h2>
+            <form action="/cancel-appointment" method="POST" class="space-y-4">
+                <div>
+                    <label for="phone" class="block font-medium">Phone:</label>
+                    <input type="text" id="phone" name="phone" required class="w-full p-2 border border-gray-300 rounded-lg">
+                </div>
+                <button type="submit" class="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600">Cancel Appointment</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
