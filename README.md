@@ -85,7 +85,7 @@ git push origin feature-branch
 🌐 Public URL for Testing
 The Spa Appointment Booking System is live on Vercel! You can test the system by visiting the public URL below:
 
-spa-booking-system on Vercel{https://vercel.com/nandanas-projects-b11ce333/spa-booking-system/14mXqrzMJTomRCb29WcZHv5HWYku }
+[spa-booking-system on Vercel](https://vercel.com/nandanas-projects-b11ce333/spa-booking-system/14mXqrzMJTomRCb29WcZHv5HWYku)
 
 **🌟 Acknowledgements**
 
